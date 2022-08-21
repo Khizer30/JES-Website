@@ -1,0 +1,148 @@
+/* Navbar */
+.navBar 
+{
+  min-height: 10vh ;
+}
+
+.navImg 
+{
+  width: 15rem ;
+}
+
+.navFont 
+{
+  font-size: 17px ;
+  font-family: Roboto, sans-serif ;
+}
+
+/* Nav Btn */
+.navBtn 
+{
+  width: 160px ;
+  height: 40px ;
+  background: rgb(220,170,15) ;
+  border-style: none ;
+  border-radius: 6px ;
+  font-family: Roboto, sans-serif ;
+  text-align: center ;
+  font-size: 17px ;
+  color: var(--bs-white) ;
+  padding: 8px ;
+
+  transition: background ;
+  transition-duration: 500ms ;
+  transition-timing-function: ease ;
+}
+
+.navBtn:hover
+{
+  background: rgb(190, 145, 10) ;
+}
+
+.navBtn:active
+{
+  background: rgb(220,170,15) ;
+  box-shadow: 1.5px 1.5px rgb(190, 145, 10) ;
+}
+
+/* Footer */
+.footer
+{
+  margin-top: 1rem ;
+}
+
+.footerCol1 
+{
+  min-height: 8vh ;
+  background: var(--bs-gray-400) ;
+  padding-top: 2vh ;
+  padding-bottom: 2vh ;
+}
+
+.footerCol2 
+{
+  min-height: 8vh ;
+  background: var(--bs-yellow) ;
+  padding-top: 2vh ;
+  padding-bottom: 2vh ;
+}
+
+.marginLR 
+{
+  margin-right: 1rem ;
+  margin-left: 1rem ;
+}
+
+.footerH 
+{
+  font-family: Roboto, sans-serif ;
+  font-weight: bold ;
+  font-size: 2em ;
+  text-align: center ;
+  margin: 0px ;
+}
+
+.footerP 
+{
+  font-size: 1em ;
+  font-family: Roboto, sans-serif ;
+  margin-top: 8px ;
+  margin-bottom: 8px ;
+}
+
+/* Dropdown Item */
+.dropdown-item
+{
+  transition: background ;
+  transition-duration: 250ms ;
+  transition-timing-function: ease ;
+}
+
+.dropdown-item:hover
+{
+  color: var(--bs-white) ;
+  background: rgb(220,170,15) ;
+}
+
+.dropdown-item:active
+{
+  background: rgb(190, 145, 10) ;
+}
+
+/* Default */
+p
+{
+  cursor: default ;
+}
+
+a
+{
+  color: inherit ;
+  text-decoration: none ;
+}
+
+a:hover
+{
+  color: inherit ;
+}
+
+/* Normal */
+.pad8 
+{
+  padding: 8px !important ;
+}
+
+.pad0
+{
+  padding: 0% ;
+}
+
+.mar0
+{
+  margin: 0% ;
+}
+
+.colorOrange 
+{
+  color: rgb(220,170,15) !important ;
+}

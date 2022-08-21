@@ -1,6 +1,98 @@
 ---
 import Layout from "../layouts/Layout.astro" ;
+import "../styles/home.css" ;
 ---
-<Layout title="Home" description="Home Page" keywords="Home, Page">
-  <h1> Hello World </h1>
+
+<Layout title="Jakson Education System" description="Jakson Education System Homepage" keywords="JES, Home">
+  <div class="container-fluid pad0">
+    <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" id="carousel1">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="w-100 d-block" src="/img/slide_0.png" alt="Slide Image" />
+        </div>
+        <div class="carousel-item">
+          <img class="w-100 d-block" src="/img/slide_1.png" alt="Slide Image" />
+        </div>
+      </div>
+      <div>
+        <a class="carousel-control-prev" href="#carousel1" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+          <span class="visually-hidden"> Previous </span>
+        </a>
+        <a class="carousel-control-next" href="#carousel1" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+          <span class="visually-hidden"> Next </span>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col d-flex flex-column justify-content-center align-items-center align-content-center homeCol1">
+        <div class="d-flex justify-content-start align-items-center homeDiv1">
+          <div class="d-flex justify-content-center align-items-center homeIconBlue">
+            <i class="fas fa-home"></i>
+          </div>
+          <p class="homeP1"> Project Based Homework </p>
+        </div>
+        <div class="d-flex justify-content-start align-items-center homeDiv1">
+          <div class="d-flex justify-content-center align-items-center homeIconYellow">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <p class="homeP1"> Hands-on Learning </p>
+        </div>
+        <div class="d-flex justify-content-start align-items-center homeDiv1">
+          <div class="d-flex justify-content-center align-items-center homeIconBlue">
+            <i class="fas fa-book"></i>
+          </div>
+          <p class="homeP1"> Nazra With Tajweed </p>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex flex-column justify-content-center align-items-center homeCol2" data-bss-hover-animate="flash">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <p class="homeP2"> Call for Information </p>
+          <p class="homeP3"> +92-300-0874364 </p>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <p class="homeP2"> For any inquiry </p>
+          <a href="mailto:info@jes.org.pk" target="_blank" class="homeP3"> info@jes.org.pk </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <p class="homeP4"> Jakson Education System is one of the emerging educational institutions in Pakistan. It portrays the unique concept of “School Without Bag” with the “Hands-on Learning” phenomenon. Jakson Education System provides quality education from early years till grade V. Compliant with national policies, our education system adopts an analytical approach to seek the hidden talents of the future of this nation. It is our primary responsibility to make the students well equipped with competitive knowledge and build them morally and ethically to let them contribute towards nation building </p>
+    <div class="text-center">
+      <a href="/adopt"> <button class="homeBtn" type="button"> Adopt a Child </button> </a>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row mar0">
+      <div class="col-md-6 d-flex justify-content-center align-items-center homeCol3" data-bss-hover-animate="swing">
+        <div>
+          <p class="homeP5"> Where vision is of one year, cultivate flowers </p>
+          <hr class="homeHR" />
+          <p class="homeP5"> Where vision is of ten years, cultivate trees </p>
+          <hr class="homeHR" />
+          <p class="homeP5"> Where vision is of eternity, cultivate people </p>
+        </div>
+      </div>
+      <div class="col-md-6 d-flex justify-content-center align-items-center homeCol4">
+        <div>
+          <h1 class="homeH1"> Why Choose Us </h1>
+          <p class="homeP6"> <i class="fas fa-long-arrow-alt-right"></i> &nbsp; &nbsp;Hands-on Learning </p>
+          <p class="homeP6"> <i class="fas fa-long-arrow-alt-right"></i> &nbsp; &nbsp;School Without Bag </p>
+          <p class="homeP6"> <i class="fas fa-long-arrow-alt-right"></i> &nbsp; &nbsp;Personality Grooming </p>
+          <p class="homeP6"> <i class="fas fa-long-arrow-alt-right"></i> &nbsp; &nbsp;Restoration of Educational Heritage </p>
+          <p class="homeP6"> <i class="fas fa-long-arrow-alt-right"></i> &nbsp; &nbsp;Legal Assistance </p>
+          <p class="homeP6"> <i class="fas fa-long-arrow-alt-right"></i> &nbsp; &nbsp;Integrated Quranic Curriculum </p>
+          <p class="homeP6"> <i class="fas fa-long-arrow-alt-right"></i> &nbsp; &nbsp;Exclusive Tarbiyah Approach </p>
+          <p class="homeP6"> <i class="fas fa-long-arrow-alt-right"></i> &nbsp; &nbsp;Parental Counselling </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>

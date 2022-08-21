@@ -7,7 +7,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "strict": true,
+    "strict": false,
     "importsNotUsedAsValues": "error",
     "removeComments": true,
     "types": ["astro/client"]

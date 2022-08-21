@@ -1,0 +1,159 @@
+.homeCol1 
+{
+  min-height: 8vh ;
+  padding-top: 2vh ;
+  padding-bottom: 2vh ;
+  background: var(--bs-gray-800) ;
+}
+
+.homeDiv1 
+{
+  margin-top: 0.25rem ;
+  margin-bottom: 0.25rem ;
+  width: 80% ;
+}
+
+.homeIconBlue 
+{
+  min-height: 50px ;
+  min-width: 50px ;
+  max-width: 50px ;
+  max-height: 50px ;
+  font-size: 1.5em ;
+  background: var(--bs-blue) ;
+  border-radius: 5px ;
+  margin: 0% ;
+  margin-right: 0.5rem ;
+  margin-left: 0.5rem ;
+  color: var(--bs-gray-300) ;
+}
+
+.homeP1 
+{
+  margin: 0% ;
+  margin-right: 0.5rem ;
+  margin-left: 0.5rem ;
+  font-size: 1.25em ;
+  color: var(--bs-gray-300) ;
+  font-family: Roboto, sans-serif ;
+}
+
+.homeIconYellow 
+{
+  min-height: 50px ;
+  min-width: 50px ;
+  max-width: 50px ;
+  max-height: 50px ;
+  font-size: 1.5em ;
+  background: rgb(220,170,15) ;
+  border-radius: 5px ;
+  margin: 0% ;
+  margin-right: 0.5rem ;
+  margin-left: 0.5rem ;
+  color: var(--bs-gray-300) ;
+}
+
+.homeCol2 
+{
+  min-height: 8vh ;
+  padding-top: 2vh ;
+  padding-bottom: 2vh ;
+  background: rgb(220,170,15) ;
+}
+
+.homeP2 
+{
+  font-family: Roboto, sans-serif ;
+  font-size: 1em ;
+  color: var(--bs-white) ;
+}
+
+.homeP3 
+{
+  color: var(--bs-white) ;
+  font-size: 1.5em ;
+  font-family: Roboto, sans-serif ;
+  font-weight: bold ;
+}
+
+.homeP4 
+{
+  margin: 1rem ;
+  font-family: Roboto, sans-serif ;
+  font-size: 1.5em ;
+  text-align: justify ;
+}
+
+.homeCol3 
+{
+  background: rgb(220,170,15) ;
+  border-radius: 30px ;
+  padding-top: 2vh ;
+  padding-bottom: 2vh ;
+  min-height: 8vh ;
+}
+
+.homeP5 
+{
+  font-size: 1.5em ;
+  font-family: Playfair Display, serif ;
+  font-weight: bold ;
+  text-align: center ;
+}
+
+.homeHR 
+{
+  height: 5px !important ;
+}
+
+.homeCol4 
+{
+  min-height: 8vh ;
+  padding-top: 2vh ;
+  padding-bottom: 2vh ;
+}
+
+.homeH1 
+{
+  font-family: Roboto, sans-serif ;
+  font-weight: bold ;
+  font-size: 2.25em ;
+}
+
+.homeP6 
+{
+  width: 100% ;
+  font-size: 1.25em ;
+  font-family: Roboto, sans-serif ;
+}
+
+/* Home Btn */
+.homeBtn 
+{
+  width: 250px ;
+  height: 50px ;
+  background: rgb(220,170,15) ;
+  border-style: none ;
+  border-radius: 6px ;
+  font-family: Roboto, sans-serif ;
+  text-align: center ;
+  font-size: 20px ;
+  color: var(--bs-white) ;
+  padding: 8px ;
+  margin: 1rem ;
+
+  transition: background ;
+  transition-duration: 500ms ;
+  transition-timing-function: ease ;
+}
+
+.homeBtn:hover
+{
+  background: rgb(190, 145, 10) ;
+}
+
+.homeBtn:active
+{
+  background: rgb(220,170,15) ;
+  box-shadow: 1.5px 1.5px rgb(190, 145, 10) ;
+}
