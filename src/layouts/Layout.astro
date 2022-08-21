@@ -1,0 +1,32 @@
+---
+export interface Props
+{
+  title: string ;
+  description: string ;
+  keywords: string ;
+}
+
+const { title, description, keywords } = Astro.props as Props ;
+---
+
+<!DOCTYPE html>
+<html lang="en-PK">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content={ description } />
+    <meta name="keywords" content={ keywords } />
+    <meta name="author" content="Jakson Education System" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title> { title } </title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png" />
+  </head>
+
+  <body>
+    <slot />
+  </body>
+
+</html>
