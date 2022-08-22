@@ -1,0 +1,84 @@
+.H1
+{
+  text-align: center ;
+  font-weight: bold ;
+  font-family: Roboto, sans-serif ;
+  font-size: 2.5em ;
+}
+
+.P1
+{
+  margin: 1rem ;
+  font-size: 1.25em ;
+  font-family: Roboto, sans-serif ;
+  text-align: justify ;
+}
+
+.list1 
+{
+  margin: 0% ;
+  padding-left: 3rem ;
+  padding-right: 3rem ;
+}
+
+.listItem1 
+{
+  font-family: Roboto, sans-serif ;
+  font-size: 1.25em ;
+  text-align: justify ;
+}
+
+.Div1 
+{
+  width: 100% ;
+  padding-right: 1.5rem ;
+  padding-left: 1.5rem ;
+}
+
+.P2 
+{
+  font-size: 1em ;
+  font-weight: bold ;
+  font-family: Roboto, sans-serif ;
+}
+
+.teamDiv 
+{
+  width: 100% ;
+  min-height: 60vh ;
+}
+
+.teamCard 
+{
+  margin: 1rem ;
+  min-width: 300px ;
+  max-width: 300px ;
+  min-height: 350px ;
+  max-height: 350px ;
+  padding: 0% ;
+}
+
+.teamImg 
+{
+  width: 200px ;
+  border-radius: 30px ;
+  border: 1px solid var(--bs-gray-400) ;
+  margin-bottom: 25px ;
+  height: 200px ;
+}
+
+.teamH1 
+{
+  font-size: 1.25em ;
+  font-weight: bold ;
+  font-family: Roboto, sans-serif ;
+  text-align: center ;
+}
+
+.teamH2 
+{
+  font-size: 1em ;
+  font-family: Roboto, sans-serif ;
+  font-weight: bold ;
+  text-align: center ;
+}

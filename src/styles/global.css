@@ -45,10 +45,17 @@
   box-shadow: 1.5px 1.5px rgb(190, 145, 10) ;
 }
 
+/* Body */
+body
+{
+  min-height: 100vh ;
+  margin: 0% ;
+}
+
 /* Footer */
 .footer
 {
-  margin-top: 1rem ;
+  margin-top: auto ;
 }
 
 .footerCol1 
@@ -140,6 +147,16 @@ a:hover
 .mar0
 {
   margin: 0% ;
+}
+
+.width100 
+{
+  width: 100% !important ;
+}
+
+.pad1 
+{
+  padding: 1rem ;
 }
 
 .colorOrange 
