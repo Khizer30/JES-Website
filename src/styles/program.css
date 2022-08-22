@@ -1,0 +1,41 @@
+.programH2 
+{
+  padding-right: 0.5rem ;
+  padding-left: 0.5rem ;
+  font-family: Roboto, sans-serif ;
+  font-weight: bold ;
+  font-size: 1.5em ;
+}
+
+.programP2 
+{
+  text-align: justify ;
+  font-family: Roboto, sans-serif ;
+  font-size: 1.15em ;
+  padding-right: 0.5rem ;
+  padding-left: 0.5rem ;
+}
+
+.programImg 
+{
+  padding-right: 0.5rem ;
+  padding-left: 0.5rem ;
+  width: 100% ;
+  border-radius: 30px ;
+}
+
+.programH1 
+{
+  text-align: center ;
+  font-weight: bold ;
+  font-family: Roboto, sans-serif ;
+  font-size: 2.5em ;
+}
+
+.programP1 
+{
+  margin: 0.5rem ;
+  font-size: 1.25em ;
+  font-family: Roboto, sans-serif ;
+  text-align: justify ;
+}
