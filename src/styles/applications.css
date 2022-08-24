@@ -26,6 +26,30 @@
   color: var(--bs-gray-700) ;
 }
 
+.H1
+{
+  text-align: center ;
+  font-weight: bold ;
+  font-family: Roboto, sans-serif ;
+  font-size: 2.5em ;
+}
+
+.P1 
+{
+  margin: 1rem ;
+  font-size: 1.25em ;
+  font-family: Roboto, sans-serif ;
+  text-align: justify ;
+}
+
+.P2
+{
+  font-size: 1em ;
+  font-family: Roboto, sans-serif ;
+  text-align: justify ;
+  color: var(--bs-gray-700) ;
+}
+
 /* Contact Btn */
 .contactBtn 
 {

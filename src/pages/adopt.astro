@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro" ;
+import Adopt from "../components/Adopt" ;
+import "../styles/applications.css" ;
+import "../styles/franchise.css" ;
+---
+
+<Layout title="Adopt a Child" description="JES Adopt a Child" keywords="Adopt, Child">
+
+  <img class="width100" src="/img/clip_1.png" alt="Image" draggable="false" />
+  <div class="container-fluid d-flex d-sm-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center pad1">
+    <h1 class="H1"> Adopt a Child </h1>
+    <p class="P1"> We at JES support the education of children of the underprivileged class. You are welcome to donate to the noble cause and help us in building the future of the poor kids through our Own A Child Program. You can own a child by donating a minimal amount of 480 US dollars as his tuition fee per annum and educational expenses </p>
+  
+    <Adopt client:load />
+  
+  </div>
+  
+</Layout>

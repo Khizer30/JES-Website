@@ -194,6 +194,11 @@ a:hover
   height: 68.65vh ;
 }
 
+.bold
+{
+  font-weight: bold ;
+}
+
 .ErrorH1 
 {
   text-align: center ;
@@ -208,6 +213,11 @@ a:hover
   font-family: Raleway, sans-serif ;
   font-weight: bold ;
   text-align: center ;
+}
+
+.hoverBold:hover
+{
+  font-weight: bold ;
 }
 
 /* Form-Control */

@@ -8,21 +8,21 @@ interface Inputs
   name: string ;
   email: string ;
   contact: string ;
-  subject: string ;
+  children: string ;
   message: string ;
 }
 
-// Franchise
-function Franchise(): JSX.Element
+// Adopt
+function Adopt(): JSX.Element
 {
   // Variables
-  const [inputs, setInputs] = useState<Inputs>({ name: "", email: "", contact: "", subject: "", message: "" }) ;
+  const [inputs, setInputs] = useState<Inputs>({ name: "", email: "", contact: "", children: "", message: "" }) ;
 
   // Send Email
   function send(): void
   {
     if (checkIt(inputs.name, 30) && checkIt(inputs.email, 50) &&
-    (inputs.contact, 30) && checkIt(inputs.subject, 30) && checkIt(inputs.message, 500))
+    (inputs.contact, 30) && checkIt(inputs.children, 3) && checkIt(inputs.message, 500))
     {
       emailjs.send("service_lbk0op9", "jes_website", inputs, "n1WTOESB7GzuR5U_a")
       .then(() => alert("Form Submitted! We Will Contact You Shortly!"))
@@ -70,9 +70,9 @@ function Franchise(): JSX.Element
       placeholder="Contact*" className="form-control franchiseTxt"
       value={ inputs.contact } onChange={ handleChange } />
 
-      <input name="subject" type="text" maxLength={ 30 } required
-      placeholder="Subject*" className="form-control franchiseTxt"
-      value={ inputs.subject } onChange={ handleChange } />
+      <input name="children" type="number" max={ 10 } min={ 1 } required
+      placeholder="No. of Children*" className="form-control franchiseTxt"
+      value={ inputs.children } onChange={ handleChange } />
 
       <textarea name="message" maxLength={ 500 } wrap="off" required
       placeholder="Message*"  className="form-control franchiseTxtArea"
@@ -87,5 +87,5 @@ function Franchise(): JSX.Element
   )
 }
 
-// Export Franchise
-export default Franchise ;
+// Export Adopt
+export default Adopt ;
