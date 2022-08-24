@@ -81,6 +81,10 @@ function Adopt(): JSX.Element
       <div className="text-center">
         <button type="button" onClick={ send } className="franchiseBtn2"> Submit </button>
       </div>
+
+      <div className="text-center">
+        <div className="g-recaptcha" data-sitekey="6LdwuKUhAAAAAM9BLRmutjojfXOyOInFJUJCV4Mw"></div>
+      </div>
       
     </form>
   </>
