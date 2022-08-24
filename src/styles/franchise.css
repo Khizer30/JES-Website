@@ -1,0 +1,113 @@
+.franchiseH1 
+{
+  text-align: center ;
+  font-weight: bold ;
+  font-family: Roboto, sans-serif ;
+  font-size: 2.5em ;
+}
+
+.franchiseP1 
+{
+  margin: 1rem ;
+  font-size: 1.25em ;
+  font-family: Roboto, sans-serif ;
+  text-align: justify ;
+}
+
+.franchiseP2 
+{
+  text-align: justify ;
+  font-size: 1.15em ;
+  font-family: Roboto, sans-serif ;
+  margin: 1rem ;
+}
+
+.franchiseList 
+{
+  margin: 0.5rem ;
+  font-size: 1.15em ;
+  font-family: Roboto, sans-serif ;
+  text-align: justify ;
+}
+
+.franchiseTxt 
+{
+  margin: 0.5rem ;
+  font-size: 1em ;
+  font-weight: bold ;
+  font-family: Raleway, sans-serif ;
+}
+
+.franchiseTxtArea 
+{
+  margin: 0.5rem ;
+  height: 10em ;
+  font-size: 1em ;
+  font-family: Raleway, sans-serif ;
+  font-weight: bold ;
+}
+
+/* Btn */
+.franchiseBtn 
+{
+  color: var(--bs-white) ;
+  font-size: 1.15em ;
+  font-family: Roboto, sans-serif ;
+  text-align: center ;
+  background: rgb(220,170,15) ;
+  border-radius: 5px ;
+  border-style: none ;
+  margin: 0.5rem ;
+  padding-top: 10px ;
+  padding-right: 30px ;
+  padding-bottom: 10px ;
+  padding-left: 30px ;
+
+  transition: background ;
+  transition-duration: 500ms ;
+  transition-timing-function: ease ;
+}
+
+.franchiseBtn:hover
+{
+  color: var(--bs-white) ;
+  background: rgb(190, 145, 10) ;
+}
+
+.franchiseBtn:active
+{
+  background: rgb(220,170,15) ;
+  box-shadow: 1.5px 1.5px rgb(190, 145, 10) ;
+}
+
+/* Btn 2 */
+.franchiseBtn2 
+{
+  margin: 0.5rem ;
+  height: 45px ;
+  width: 150px ;
+  font-family: Roboto, sans-serif ;
+  font-size: 1.15em ;
+  text-align: center ;
+  border-radius: 5px ;
+  border-width: 1px ;
+  border-style: none ;
+  background: rgb(220,170,15) ;
+  color: var(--bs-white) ;
+
+  transition: background ;
+  transition-duration: 500ms ;
+  transition-timing-function: ease ;
+}
+
+.franchiseBtn2:hover
+{
+  color: var(--bs-white) ;
+  background: rgb(190, 145, 10) ;
+}
+
+.franchiseBtn2:active
+{
+  background: rgb(220,170,15) ;
+  box-shadow: 1.5px 1.5px rgb(190, 145, 10) ;
+}

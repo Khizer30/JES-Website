@@ -1,0 +1,62 @@
+.contactH1 
+{
+  text-align: center ;
+  font-weight: bold ;
+  font-family: Raleway, sans-serif ;
+  font-size: 2.25em ;
+  width: 100% ;
+}
+
+.contactH2 
+{
+  text-align: center ;
+  font-weight: bold ;
+  font-family: Open Sans, sans-serif ;
+  font-size: 1.75em ;
+  color: rgb(50,110,175) ;
+  width: 100% ;
+}
+
+.contactP1 
+{
+  font-size: 1em ;
+  font-family: Roboto, sans-serif ;
+  text-align: center ;
+  font-weight: bold ;
+  color: var(--bs-gray-700) ;
+}
+
+/* Contact Btn */
+.contactBtn 
+{
+  background: rgb(220,170,15) ;
+  font-family: Raleway, sans-serif ;
+  font-size: 0.65em ;
+  color: var(--bs-white) ;
+
+  transition: background ;
+  transition-duration: 500ms ;
+  transition-timing-function: ease ;
+}
+
+.accordion-button:not(.collapsed)
+{
+  background: rgb(220,170,15) ;
+  color: var(--bs-white) ;
+  box-shadow: none ;
+  outline: none ;
+}
+
+.accordion-button:hover
+{
+  background: rgb(190, 145, 10) ;
+  box-shadow: none ;
+  outline: none ;
+}
+
+.accordion-button:focus
+{
+  background: rgb(190, 145, 10) ;
+  box-shadow: none ;
+  outline: none ;
+}

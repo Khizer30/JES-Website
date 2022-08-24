@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro" ;
+import "../styles/contact.css" ;
+---
+
+<Layout title="Contact Us" description="JES Contact Us" keywords="Contact">
+
+  <img class="width100" src="/img/clip_1.png" alt="Image" draggable="false" />
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center pad1">
+          <h1 class="contactH1"> Jakson Education System </h1>
+          <h1 class="contactH2"> +92-304-5149450 </h1>
+          <div class="accordion width100" role="tablist" id="accordion1">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" role="tab">
+                <button class="accordion-button collapsed contactBtn" data-bs-toggle="collapse" data-bs-target="#accordion1 .item-1" aria-expanded="false" aria-controls="accordion1 .item-1"> Islamabad Campus </button>
+              </h2>
+              <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion1">
+                <div class="accordion-body">
+                  <p class="contactP1"> <i class="fas fa-map-marker-alt"></i> &nbsp; &nbsp;House 901, Street 26, Abu-Bakr Block, Phase 8, Bahria Town, Islamabad </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" role="tab">
+                <button class="accordion-button collapsed contactBtn" data-bs-toggle="collapse" data-bs-target="#accordion1 .item-2" aria-expanded="false" aria-controls="accordion1 .item-2"> GT Road Campus </button>
+              </h2>
+              <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion1">
+                <div class="accordion-body">
+                  <p class="contactP1"> <i class="fas fa-map-marker-alt footerCol2Icon"></i> &nbsp; &nbsp;House 901, Street 26, Abu-Bakr Block, Phase 8, Bahria Town, Islamabad </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-6 pad1">
+          <iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAEvpJDWEP8eBw2ZWbDuhpfSJRUaJBFcCM&amp;q=932+Street+26%2C+Phase+8+Abu+Bakar+Block+Bahria+Safari+Valley%2C+Rawalpindi%2C+Punjab%2C+Pakistan&amp;zoom=15" class="width100" height="400"></iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</Layout>
