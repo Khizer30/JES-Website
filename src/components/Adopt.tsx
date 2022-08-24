@@ -24,7 +24,7 @@ function Adopt(): JSX.Element
     if (checkIt(inputs.name, 30) && checkIt(inputs.email, 50) &&
     (inputs.contact, 30) && checkIt(inputs.children, 3) && checkIt(inputs.message, 500))
     {
-      emailjs.send("service_lbk0op9", "jes_website", inputs, "n1WTOESB7GzuR5U_a")
+      emailjs.send("service_lbk0op9", "jes_adoption", inputs, "n1WTOESB7GzuR5U_a")
       .then(() => alert("Form Submitted! We Will Contact You Shortly!"))
       .catch(() => alert("Error Submitting The Form! Please Try Later!")) ;
     }
