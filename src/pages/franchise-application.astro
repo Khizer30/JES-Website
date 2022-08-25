@@ -7,16 +7,13 @@ import "../styles/franchise.css" ;
 <Layout title="Franchise Application" description="JES Franchise Application" keywords="Franchise, Application">
 
   <img class="width100" src="/img/clip_3.png" alt="Image" loading="eager" draggable="false" />
-  <div class="container-fluid d-flex d-sm-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center pad1">
-    <h1 class="franchiseH1 "> Franchise Application Form </h1>
-    
-    <form id="theForm" method="post" target="_self" 
-    enctype="multipart/form-data" autocomplete="off" class="width85" novalidate>
-      <Franchise client:only="react" />
+  <div class="container-fluid d-sm-flex flex-column justify-content-sm-center align-items-sm-center pad1">
+    <h1 class="programH1"> Franchise Application Form </h1>
+    <div class="d-flex d-sm-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center width100">
 
-      <div data-sitekey="6LdwuKUhAAAAAM9BLRmutjojfXOyOInFJUJCV4Mw" class="g-recaptcha d-flex d-sm-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center pad1"></div>
-    </form>
+      <Franchise client:load />
 
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </div>
   </div>
+  
 </Layout>

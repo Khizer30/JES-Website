@@ -12,14 +12,8 @@ import "../styles/franchise.css" ;
     <h1 class="H1"> Adopt a Child </h1>
     <p class="P1"> We at JES support the education of children of the underprivileged class. You are welcome to donate to the noble cause and help us in building the future of the poor kids through our Own A Child Program. You can own a child by donating a minimal amount of 480 US dollars as his tuition fee per annum and educational expenses </p>
   
-    <form id="theForm" method="post" target="_self" 
-    enctype="multipart/form-data" autocomplete="off" class="width85" novalidate>
-      <Adopt client:only="react" />
-
-      <div data-sitekey="6LdwuKUhAAAAAM9BLRmutjojfXOyOInFJUJCV4Mw" class="g-recaptcha d-flex d-sm-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center pad1"></div>
-    </form>
-
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <Adopt client:load />
+  
   </div>
   
 </Layout>
