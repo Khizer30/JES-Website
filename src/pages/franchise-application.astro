@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro" ;
-import Franchise from "../components/Franchise.jsx" ;
+import Franchise from "../components/Franchise" ;
 import "../styles/franchise.css" ;
 ---
 
@@ -11,7 +11,7 @@ import "../styles/franchise.css" ;
     <h1 class="programH1"> Franchise Application Form </h1>
     <div class="d-flex d-sm-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center width100">
 
-      <Franchise client:only="@astrojs/react" />
+      <Franchise client:load />
 
     </div>
   </div>

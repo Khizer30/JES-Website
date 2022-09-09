@@ -169,6 +169,12 @@ a:hover
   padding: 0.5rem ;
 }
 
+.marginTB
+{
+  margin-top: 1rem ;
+  margin-bottom: 0.25rem ;
+}
+
 .width100 
 {
   width: 100% !important ;

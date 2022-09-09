@@ -1,5 +1,6 @@
-import { useState } from "react" ;
+import { useState, useRef } from "react" ;
 import emailjs from "@emailjs/browser" ;
+import ReCAPTCHA from "react-google-recaptcha" ;
 import type * as React from "react" ;
 
 // Inputs Interface
@@ -17,6 +18,7 @@ function Adopt(): JSX.Element
 {
   // Variables
   const [inputs, setInputs] = useState<Inputs>({ name: "", email: "", contact: "", children: "", message: "" }) ;
+  const form: React.MutableRefObject<HTMLFormElement> = useRef<HTMLFormElement>() ;
 
   // Send Email
   function send(): void
@@ -24,7 +26,7 @@ function Adopt(): JSX.Element
     if (checkIt(inputs.name, 30) && checkIt(inputs.email, 50) &&
     (inputs.contact, 30) && checkIt(inputs.children, 3) && checkIt(inputs.message, 500))
     {
-      emailjs.send("service_lbk0op9", "jes_adoption", inputs, "n1WTOESB7GzuR5U_a")
+      emailjs.sendForm("service_lbk0op9", "jes_adoption", form.current, "n1WTOESB7GzuR5U_a")
       .then(() => alert("Form Submitted! We Will Contact You Shortly!"))
       .catch(() => alert("Error Submitting The Form! Please Try Later!")) ;
     }
@@ -37,7 +39,7 @@ function Adopt(): JSX.Element
   // Handle Change
   function handleChange(event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>): void
   {
-    setInputs(values => ({ ...values, [event.target.name]: event.target.value })) ;
+    setInputs((values: Inputs) => ({ ...values, [event.target.name]: event.target.value })) ;
   }
 
   // Check Input
@@ -53,9 +55,16 @@ function Adopt(): JSX.Element
     }
   }
 
+  // Handle Submit
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>): void
+  {
+    event.preventDefault() ;
+    send() ;
+  }
+
   return (
   <>
-    <form method="post" target="_self" 
+    <form method="post" target="_self" ref={ form } onSubmit={ handleSubmit }
     encType="multipart/form-data" autoComplete="off" className="width85" noValidate>
 
       <input name="name" type="text" maxLength={ 30 } required
@@ -78,8 +87,15 @@ function Adopt(): JSX.Element
       placeholder="Message*"  className="form-control franchiseTxtArea"
       value={ inputs.message } onChange={ handleChange }></textarea>
 
+      <div className="d-flex d-sm-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center marginTB">
+        <ReCAPTCHA 
+          sitekey="6Lf0K-MhAAAAAE_OxGV758gOtAnu3VeQBpItD74b"
+          theme="light"
+        />
+      </div>
+
       <div className="text-center">
-        <button type="button" onClick={ send } className="franchiseBtn2"> Submit </button>
+        <button type="submit" onSubmit={ send } className="franchiseBtn2"> Submit </button>
       </div>
       
     </form>
