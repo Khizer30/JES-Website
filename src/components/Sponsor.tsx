@@ -1,6 +1,5 @@
 import { useState, useRef } from "react" ;
 import emailjs from "@emailjs/browser" ;
-import ReCAPTCHA from "react-google-recaptcha" ;
 import type * as React from "react" ;
 
 // Inputs Interface
@@ -13,8 +12,8 @@ interface Inputs
   message: string ;
 }
 
-// Adopt
-function Adopt(): JSX.Element
+// Sponsor
+function Sponsor(): JSX.Element
 {
   // Variables
   const [inputs, setInputs] = useState<Inputs>({ name: "", email: "", contact: "", children: "", message: "" }) ;
@@ -26,8 +25,12 @@ function Adopt(): JSX.Element
     if (checkIt(inputs.name, 30) && checkIt(inputs.email, 50) &&
     (inputs.contact, 30) && checkIt(inputs.children, 3) && checkIt(inputs.message, 500))
     {
-      emailjs.sendForm("service_lbk0op9", "jes_adoption", form.current, "n1WTOESB7GzuR5U_a")
-      .then(() => alert("Form Submitted! We Will Contact You Shortly!"))
+      emailjs.sendForm("service_lbk0op9", "jes_sponsor", form.current, "n1WTOESB7GzuR5U_a")
+      .then(() =>
+      {
+        alert("Form Submitted! We Will Contact You Shortly!") ;
+        setInputs({ name: "", email: "", contact: "", children: "", message: "" }) ;
+      })
       .catch(() => alert("Error Submitting The Form! Please Try Later!")) ;
     }
     else
@@ -87,13 +90,6 @@ function Adopt(): JSX.Element
       placeholder="Message*"  className="form-control franchiseTxtArea"
       value={ inputs.message } onChange={ handleChange }></textarea>
 
-      <div className="d-flex d-sm-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center marginTB">
-        <ReCAPTCHA 
-          sitekey="6Lf0K-MhAAAAAE_OxGV758gOtAnu3VeQBpItD74b"
-          theme="light"
-        />
-      </div>
-
       <div className="text-center">
         <button type="submit" onSubmit={ send } className="franchiseBtn2"> Submit </button>
       </div>
@@ -103,5 +99,5 @@ function Adopt(): JSX.Element
   )
 }
 
-// Export Adopt
-export default Adopt ;
+// Export Sponsor
+export default Sponsor ;

@@ -1,6 +1,5 @@
 import { useState, useRef } from "react" ;
 import emailjs from "@emailjs/browser" ;
-import ReCAPTCHA from "react-google-recaptcha" ;
 import type * as React from "react" ;
 
 // Inputs Interface
@@ -27,7 +26,11 @@ function Franchise(): JSX.Element
     (inputs.contact, 30) && checkIt(inputs.subject, 30) && checkIt(inputs.message, 500))
     {
       emailjs.sendForm("service_lbk0op9", "jes_franchise", form.current, "n1WTOESB7GzuR5U_a")
-      .then(() => alert("Form Submitted! We Will Contact You Shortly!"))
+      .then(() =>
+      {
+        alert("Form Submitted! We Will Contact You Shortly!") ;
+        setInputs({ name: "", email: "", contact: "", subject: "", message: "" }) ;
+      })
       .catch(() => alert("Error Submitting The Form! Please Try Later!")) ;
     }
     else
@@ -86,13 +89,6 @@ function Franchise(): JSX.Element
       <textarea name="message" maxLength={ 500 } wrap="off" required
       placeholder="Message*"  className="form-control franchiseTxtArea"
       value={ inputs.message } onChange={ handleChange }></textarea>
-
-      <div className="d-flex d-sm-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center marginTB">
-        <ReCAPTCHA 
-          sitekey="6Lf0K-MhAAAAAE_OxGV758gOtAnu3VeQBpItD74b"
-          theme="light"
-        />
-      </div>
 
       <div className="text-center">
         <button type="submit" onSubmit={ send } className="franchiseBtn2"> Submit </button>

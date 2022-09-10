@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://jes-website-786.web.app/sitemap-index.xml

@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro" ;
+import Sponsor from "../components/Sponsor" ;
+import "../styles/applications.css" ;
+import "../styles/franchise.css" ;
+---
+
+<Layout title="Sponsor a Child" description="JES Sponsor a Child" keywords="Sponsor, Child">
+
+  <img class="width100" src="/img/clip_1.webp" alt="Image" loading="eager" draggable="false" />
+  <div class="container-fluid d-flex d-sm-flex flex-column justify-content-center align-items-center justify-content-sm-center align-items-sm-center pad1">
+    <h1 class="H1"> Sponsor a Child </h1>
+    <p class="P1"> We at JES support the education of children of the underprivileged class. You are welcome to donate to the noble cause and help us in building the future of the poor kids through our Sponsor a Child Program. You can own a child by donating a minimal amount of 480 US dollars as his tuition fee per annum and educational expenses </p>
+  
+    <Sponsor client:load />
+  
+  </div>
+  
+</Layout>
