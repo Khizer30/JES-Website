@@ -132,6 +132,11 @@ p
   cursor: default ;
 }
 
+h1
+{
+  cursor: default ;
+}
+
 a
 {
   color: inherit ;

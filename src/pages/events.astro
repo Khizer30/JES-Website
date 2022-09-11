@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro" ;
+import SchoolEvent from "../components/SchoolEvents" ;
+import "../styles/program.css" ;
+import "../styles/events.css" ;
+---
+
+<Layout title="School Events" description="JES School Events" keywords="School, Events">
+
+  <img class="width100" src="/img/clip_1.webp" alt="Image" loading="eager" draggable="false" />
+  <div class="container-fluid d-sm-flex flex-column justify-content-sm-center align-items-sm-center pad1">
+    <h1 class="programH1"> School Events </h1>
+  </div>
+
+  <div class="container-fluid d-flex d-sm-flex justify-content-center align-items-center justify-content-sm-center align-items-sm-center">
+    <hr class="eventsHR" />
+  </div>
+
+  <SchoolEvent client:load />
+  
+</Layout>
