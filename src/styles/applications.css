@@ -50,6 +50,11 @@
   color: var(--bs-gray-700) ;
 }
 
+.map
+{
+  border-radius: 30px ;
+}
+
 /* Contact Btn */
 .contactBtn 
 {
